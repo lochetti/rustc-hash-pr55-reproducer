@@ -13,4 +13,4 @@ I have tried the reproducer code with 128, 256, 512, 1024 and 2048 table creatio
 | 1024   | 3723024    | 223   | 3727160    | 415     |
 | 2048   | 7440144    | 452   | 7448376    | 1282    |
 
-You can notice that the # of GenericArgs interner is pretty similar between 1.83 and 1.84, but the compile time starts to generate quickly after 1024 tables being created (because the number of elements at the hash table greatly exceeds 2^20)
+You can notice that the # of GenericArgs interner is pretty similar between 1.83 and 1.84, but the compile time starts to degenerate quickly after 1024 tables being created (because the number of elements at the hash table greatly exceeds 2^20)
