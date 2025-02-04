@@ -5,7 +5,7 @@ The current state of the code is calling 2048 times the macro, but as one could 
 
 I have tried the reproducer code with 128, 256, 512, 1024 and 2048 table creations and got the following results:
 
-| # of tables created | # of GenericArgs interner - Rust 1.83 | Compile Time (sec) - Rust 1.83 | # of GenericArgs interner - Rust 1.84.1 | Compile Time (sec) - Rust 1.84.1 |
+| # of tables created | # of GenericArgs interner - Rust 1.83 | Compile Time (seconds) - Rust 1.83 | # of GenericArgs interner - Rust 1.84.1 | Compile Time (seconds) - Rust 1.84.1 |
 | ------ | ---------- | ----- | ---------- | ------- |
 | 128    | 470544     | 35    | 471096     | 37      |
 | 256    | 935184     | 60    | 936248     | 61      |
