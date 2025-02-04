@@ -1,0 +1,7 @@
+[package]
+name = "hash_reproducer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+diesel = { version = "2", features = ["32-column-tables"], default-features = false }
